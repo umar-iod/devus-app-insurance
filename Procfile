@@ -1,1 +1,1 @@
-web: gunicorn app:devus-app
+web: gunicorn devus-app:app
