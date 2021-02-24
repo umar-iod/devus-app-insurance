@@ -28,7 +28,8 @@ def predict_api():
     data_unseen = pd.DataFrame([data])
     prediction = predict_model(model, data=data_unseen)
     output = prediction.Label[0]
-    return list(jsonify(output), output, prediction)
+    # return jsonify(output)
+    return output
 
 if __name__ == '__main__':
     app.run(debug=True)
